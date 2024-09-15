@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int num = 30;         // Declare an integer
+    int *ptr = &num;      // Pointer to the integer
+    int **ptr2 = &ptr;    // Pointer to the pointer
+
+    // Print value using pointer and double-pointer
+    printf("Value of num using pointer: %d\n", *ptr);
+    printf("Value of num using double-pointer: %d\n", **ptr2);
+
+    return 0;
+}
